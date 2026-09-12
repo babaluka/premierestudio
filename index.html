@@ -81,6 +81,35 @@
   .btn:hover { transform:translateY(-2px); filter:brightness(1.07); }
   .playhead { will-change:left; }
   @media (prefers-reduced-motion:reduce) { .reveal{opacity:1;transform:none;transition:none} .playhead,.pin .dot{animation:none} }
+  @media (max-width:640px) {
+    .wrap { padding:0 16px; }
+    .btn { padding:13px 22px; font-size:15px; }
+    header .row { padding:11px 0; gap:10px; }
+    header img { height:22px; }
+    header .btn { padding:9px 15px; font-size:13px; box-shadow:none; }
+    .kick { font-size:11px; letter-spacing:2px; }
+    .hero { padding:40px 0 8px; }
+    .hero h1 { margin:12px 0 12px; }
+    .hero .ctaRow { flex-direction:column; gap:10px; }
+    .hero .ctaRow .btn { width:100%; text-align:center; }
+    .note { font-size:12px; }
+    section { padding:40px 0; }
+    h2 { margin-bottom:6px; }
+    .lead { margin-bottom:26px; font-size:14px; }
+    .tl { padding:14px 14px 18px; margin:30px 0; border-radius:14px; }
+    .tlhead { font-size:12px; }
+    .cats { grid-template-columns:1fr 1fr; gap:8px; }
+    .cat { padding:11px 12px; font-size:13px; border-radius:10px; }
+    .steps { grid-template-columns:1fr; gap:12px; }
+    .step { padding:20px; }
+    .pcard { padding:26px 20px; border-radius:16px; }
+    .pcard .price { font-size:52px; }
+    .cat:hover,.step:hover,.pcard:hover,.btn:hover { transform:none; }
+  }
+  @media (max-width:380px) {
+    .cats { grid-template-columns:1fr; }
+    .hero h1 { font-size:34px; }
+  }
 </style></head><body>
 
 <header><div class="wrap row">
